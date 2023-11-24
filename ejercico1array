@@ -1,0 +1,25 @@
+public class Ejercico1array {
+//1. Crea un programa que pida diez números reales por teclado, los almacene en un array, y
+    // luego muestre todos sus valores
+    public static void main(String[] args) {
+        double [] array=new double[10];
+        pedir(array);
+        mostrar(array);
+    }
+     //Introducimos todos los valores en el array
+    public static void pedir(double[]array){
+        Scanner sc=new Scanner (System.in);
+        for(int i=0;i<array.length;i++){
+            System.out.println("introduce diez numeros");
+            array[i]=sc.nextDouble();
+            
+        }
+    }
+    //Mostramos todos los valores del array
+    private static void mostrar(double[]array){
+        for(int i=0;i<array.length;i++){
+            System.out.println("los numero son"+array[i]);
+        
+    }
+    }
+}
