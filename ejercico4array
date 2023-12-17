@@ -1,0 +1,31 @@
+/4. Crea un programa que pida veinte números por teclado, los almacene en un array y
+    //   luego muestre por separado la suma de todos los valores positivos y negativos.
+    public static void main(String[] args) {
+       double valor[]= new double[10];
+       pedirnumero(valor);
+       saber(valor);
+
+    }
+
+    private static void pedirnumero(double[] valor) {
+    Scanner sc=  new Scanner (System.in);
+        for (int i = 0; i <valor.length; i++) {
+            System.out.println("añade unos numero "+i);
+            valor[i]=sc.nextDouble();
+            
+        }
+}
+    private static void saber(double[] valor){
+double pos=0,neg=0;
+        for (int i = 0; i <valor.length; i++) {
+        if(valor[i]<0){
+        pos+=valor[i];
+    } else{
+      neg=0;
+    }
+                 
+   }
+        System.out.println("suma de psostivo "+pos);
+        System.out.println("suma de negativos "+neg);
+ }   
+}
